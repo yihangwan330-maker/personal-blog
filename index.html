@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YiHang's blog | Personal Blog</title>
+    <meta name="description" content="Welcome to YiHang's blog, where I record my thoughts and notes on learning mathematics, coding, personal projects, and writing.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Back to home">YiHang's blog</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#posts">Posts</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-label="Personal blog introduction">
+        <img class="hero-image" src="assets/hero-workspace.png" alt="A writing desk by a window at dusk">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Personal Blog</p>
+          <h1>YiHang's blog</h1>
+          <p class="hero-copy">
+            Welcome to YiHang's blog, where I record my thoughts and notes on learning mathematics, coding, personal projects, and writing.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#posts">Start Reading</a>
+            <a class="button ghost" href="#about">About Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" id="about">
+        <figure class="profile-photo">
+          <img src="assets/profile-yihang.jpg" alt="YiHang reading beside a window">
+        </figure>
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2>YiHang</h2>
+          <p>
+            Welcome to YiHang's blog, where I record my thoughts and notes on learning mathematics, coding, personal projects, and writing.
+          </p>
+          <div class="contact-card" aria-label="Contact me">
+            <p class="contact-label">Contact me</p>
+            <a href="mailto:124090603@link.cuhk.edu.com">124090603@link.cuhk.edu.com</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section posts-section" id="posts">
+        <div class="section-heading">
+          <p class="eyebrow">Latest Posts</p>
+          <h2>Latest Posts</h2>
+        </div>
+
+        <div class="tools" aria-label="Post filtering tools">
+          <label class="search">
+            <span class="sr-only">Search posts</span>
+            <input id="searchInput" type="search" placeholder="Search title, tags, or summary">
+          </label>
+          <div class="filters" id="tagFilters" aria-label="Filter by tag"></div>
+        </div>
+
+        <div class="post-grid" id="postGrid"></div>
+      </section>
+
+      <section class="section reader-section" id="reader" hidden>
+        <button class="text-button" id="closeReader" type="button">← Back to posts</button>
+        <article class="reader" id="readerContent"></article>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 YiHang's blog</p>
+      <p>Built from scratch with HTML, CSS and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
