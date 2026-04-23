@@ -57,12 +57,48 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 70% 44%, rgba(223, 90, 51, 0.22), transparent 28%),
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.026) 0 1px, transparent 1px 6px);
-  mix-blend-mode: screen;
-  opacity: 0.78;
+  background: linear-gradient(118deg, transparent 0 34%, rgba(255, 255, 255, 0.1) 38%, transparent 46%);
+  animation: cockpitSweep 8.5s ease-in-out infinite;
   pointer-events: none;
+}
+
+.menu-hero .menu-copy::before {
+  content: "";
+  position: absolute;
+  left: -18vw;
+  top: -28vh;
+  width: 78vw;
+  height: 78vh;
+  background: radial-gradient(circle, rgba(223, 90, 51, 0.18), transparent 62%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.menu-hero .menu-panel::before {
+  content: "";
+  position: absolute;
+  right: -16vw;
+  bottom: -20vh;
+  width: 54vw;
+  height: 48vh;
+  background: radial-gradient(circle, rgba(126, 215, 255, 0.12), transparent 64%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+@keyframes cockpitSweep {
+  0%,
+  42% {
+    transform: translateX(-42%);
+    opacity: 0;
+  }
+  58% {
+    opacity: 0.58;
+  }
+  100% {
+    transform: translateX(38%);
+    opacity: 0;
+  }
 }
 
 .mars-menu::before {
