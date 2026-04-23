@@ -257,6 +257,12 @@ h1 {
   overflow-wrap: anywhere;
 }
 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
 .tools {
   display: flex;
   flex-wrap: wrap;
