@@ -53,16 +53,37 @@ a {
 
 .nav {
   display: flex;
+  align-items: center;
   gap: clamp(14px, 3vw, 30px);
   font-size: 14px;
 }
 
-.nav a {
+.nav a,
+.nav-login {
   opacity: 0.86;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav-login:hover {
   opacity: 1;
+}
+
+.nav-login {
+  min-width: 48px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: 0;
+  text-align: center;
+  transition: opacity 160ms ease, transform 160ms ease, color 160ms ease;
+}
+
+.nav-login-flash {
+  color: var(--amber);
+  transform: translateY(-1px);
 }
 
 .hero {

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mars Landing Menu | YiHang's blog</title>
+    <meta name="description" content="A small Mars landing menu page for YiHang's blog.">
+    <link rel="stylesheet" href="mars-landing.css">
+  </head>
+  <body>
+    <main class="mars-menu" aria-label="Mars landing menu">
+      <section class="menu-hero">
+        <div class="menu-copy">
+          <p class="eyebrow">Login / 登录 / 登陆</p>
+          <h1>Mars Landing</h1>
+          <p class="lead">
+            Account verification has been translated into planetary arrival. This page is reserved for field notes from Mars.
+          </p>
+        </div>
+
+        <nav class="menu-panel" aria-label="Mars menu">
+          <a class="menu-item primary earth-return" href="index.html">
+            <span>01</span>
+            <strong>Return to Earth</strong>
+            <small>Leave before the dust starts charging rent.</small>
+          </a>
+          <a class="menu-item" href="#mars-notes">
+            <span>02</span>
+            <strong>Mars Field Notes</strong>
+            <small>Open the small archive of hobbies, photos, and things that survived the landing.</small>
+          </a>
+        </nav>
+      </section>
+
+      <section class="mars-notes" id="mars-notes" aria-label="Mars field notes">
+        <p class="eyebrow">Field Notes</p>
+        <h2>Welcome to Mars</h2>
+        <p>
+          You have successfully logged in, landed, and been added to a planet with no return policy.
+        </p>
+        <div class="photo-gallery" aria-label="Mars field notes photos">
+          <figure><img src="photos/0297b462723a3b4b97d9f0c9ad5926f9.jpg" alt="Mars field note photo 1" loading="lazy"></figure>
+          <figure><img src="photos/05b0aa2e7eda40250280c98322c0be06.jpg" alt="Mars field note photo 2" loading="lazy"></figure>
+          <figure><img src="photos/09a865f0c96e0e8c983447bfef532bc8.jpg" alt="Mars field note photo 3" loading="lazy"></figure>
+          <figure><img src="photos/0bcf8bdd0b72d8d1f4ad88e3e63c785c.jpg" alt="Mars field note photo 4" loading="lazy"></figure>
+          <figure><img src="photos/176ad2e2cf7eec695d5df3ebe7c69675.jpg" alt="Mars field note photo 5" loading="lazy"></figure>
+          <figure><img src="photos/2a6297754af0e8894d7cc1ed0a46d05c.jpg" alt="Mars field note photo 6" loading="lazy"></figure>
+          <figure><img src="photos/2dce48ea6027982935599a96de9649f6.jpg" alt="Mars field note photo 7" loading="lazy"></figure>
+          <figure><img src="photos/317a647b1d42495ce7f7f5a272584976.jpg" alt="Mars field note photo 8" loading="lazy"></figure>
+          <figure><img src="photos/4c3813b0f2f96d2490365c00fd4d1dd2.jpg" alt="Mars field note photo 9" loading="lazy"></figure>
+          <figure><img src="photos/5842c406f0cba0861a5cc221b93598dc.jpg" alt="Mars field note photo 10" loading="lazy"></figure>
+          <figure><img src="photos/59d6240cfe59a915aced430713ae7712.jpg" alt="Mars field note photo 11" loading="lazy"></figure>
+          <figure><img src="photos/60e4bfedd569a3c70cba23dfb39e7d15.jpg" alt="Mars field note photo 12" loading="lazy"></figure>
+          <figure><img src="photos/73e3f13a9a1b4309c2c166b011ccb0ae.jpg" alt="Mars field note photo 13" loading="lazy"></figure>
+          <figure><img src="photos/774d329cba6309b9bce757ff9f58720a.jpg" alt="Mars field note photo 14" loading="lazy"></figure>
+          <figure><img src="photos/973504b9ccbf306644d50ff06e8bb092.jpg" alt="Mars field note photo 15" loading="lazy"></figure>
+          <figure><img src="photos/9d67342cafe30efb690bbc118da9bcce.jpg" alt="Mars field note photo 16" loading="lazy"></figure>
+          <figure><img src="photos/aa8d923eac0976c767b33d2d30629e58.jpg" alt="Mars field note photo 17" loading="lazy"></figure>
+          <figure><img src="photos/c19d967bee90aab8819e485028c17785.jpg" alt="Mars field note photo 18" loading="lazy"></figure>
+          <figure><img src="photos/d2b4fd9568a9e0ea7680e2ac10a0304c.jpg" alt="Mars field note photo 19" loading="lazy"></figure>
+          <figure><img src="photos/df1d66bb1ad1b8e5f174c15370a36e57.jpg" alt="Mars field note photo 20" loading="lazy"></figure>
+          <figure><img src="photos/e2a09e4b18312c4ec8c343a9c9ded195.jpg" alt="Mars field note photo 21" loading="lazy"></figure>
+          <figure><img src="photos/e500ff7f1bbfb523cf404606d365192b.jpg" alt="Mars field note photo 22" loading="lazy"></figure>
+          <figure><img src="photos/facb3638a3448bc0b6b6fa0187cdea3b.jpg" alt="Mars field note photo 23" loading="lazy"></figure>
+          <figure><img src="photos/ff245e36703aad13c4f3b0d854b8e1b9.jpg" alt="Mars field note photo 24" loading="lazy"></figure>
+          <figure><img src="photos/ff9b4c5fcdb20d65d726915b4eea13dd.jpg" alt="Mars field note photo 25" loading="lazy"></figure>
+        </div>
+      </section>
+
+      <div class="lightbox" id="photoLightbox" aria-modal="true" role="dialog" aria-label="Photo viewer" hidden>
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo viewer">Close</button>
+        <button class="lightbox-nav previous" id="lightboxPrevious" type="button" aria-label="Previous photo">‹</button>
+        <img id="lightboxImage" src="" alt="">
+        <button class="lightbox-nav next" id="lightboxNext" type="button" aria-label="Next photo">›</button>
+        <p id="lightboxCounter"></p>
+      </div>
+
+      <aside class="status-board" aria-label="Landing status">
+        <div>
+          <span>Destination</span>
+          <strong>Mars</strong>
+        </div>
+        <div>
+          <span>Gallery</span>
+          <strong>25 Photos</strong>
+        </div>
+        <div>
+          <span>Field Notes</span>
+          <strong>Online</strong>
+        </div>
+        <div>
+          <span>Earth Signal</span>
+          <strong>Unread</strong>
+        </div>
+      </aside>
+    </main>
+    <script src="mars-landing.js"></script>
+  </body>
+</html>

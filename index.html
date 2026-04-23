@@ -11,8 +11,7 @@
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Back to home">YiHang's blog</a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#posts">Posts</a>
-        <a href="#about">About</a>
+        <button class="nav-login" id="marsLoginTrigger" type="button" aria-label="Mars landing access">login</button>
       </nav>
     </header>
 
@@ -79,6 +78,24 @@
       <p>Built from scratch with HTML, CSS and JavaScript.</p>
     </footer>
 
+    <script>
+      const marsLoginTrigger = document.querySelector("#marsLoginTrigger");
+      const marsLoginStates = ["login", "登录", "登陆"];
+      let marsLoginIndex = 0;
+
+      marsLoginTrigger.addEventListener("click", () => {
+        marsLoginIndex += 1;
+
+        if (marsLoginIndex >= marsLoginStates.length) {
+          window.location.href = "mars-landing.html";
+          return;
+        }
+
+        marsLoginTrigger.textContent = marsLoginStates[marsLoginIndex];
+        marsLoginTrigger.classList.add("nav-login-flash");
+        window.setTimeout(() => marsLoginTrigger.classList.remove("nav-login-flash"), 220);
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
