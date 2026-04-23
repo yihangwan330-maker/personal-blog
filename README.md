@@ -1,4 +1,4 @@
-# Personal Blog
+# 北窗笔记 Personal Blog
 
 一个从零搭建的静态个人博客雏形，直接打开 `index.html` 就可以浏览。
 
