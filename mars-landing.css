@@ -250,6 +250,10 @@ h1 {
   backdrop-filter: blur(12px);
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .lightbox img {
   max-width: min(1180px, 100%);
   max-height: min(82vh, 880px);
@@ -262,14 +266,13 @@ h1 {
 .lightbox-nav {
   position: fixed;
   z-index: 21;
-  border: 1px solid rgba(247, 239, 228, 0.26);
-  border-radius: 8px;
-  background: rgba(8, 10, 13, 0.72);
+  border: 0;
+  background: transparent;
   color: var(--ink);
   cursor: pointer;
   font: inherit;
   font-weight: 900;
-  backdrop-filter: blur(10px);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.88);
 }
 
 .lightbox-close {
@@ -277,6 +280,7 @@ h1 {
   right: 18px;
   min-height: 42px;
   padding: 0 14px;
+  color: rgba(247, 239, 228, 0.82);
 }
 
 .lightbox-nav {
@@ -284,8 +288,14 @@ h1 {
   width: 48px;
   height: 58px;
   transform: translateY(-50%);
+  color: rgba(247, 239, 228, 0.72);
   font-size: 34px;
   line-height: 1;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover {
+  color: #fff;
 }
 
 .lightbox-nav.previous {
