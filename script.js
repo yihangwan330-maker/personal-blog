@@ -8,19 +8,6 @@ const posts = [
     excerpt: "How a middle school curiosity about irrational numbers became Number Trace, a website for searching personal digit sequences inside mathematical constants.",
     body: [
       "In middle school, I once had an “interest class” where the teacher asked us to design a project proposal. We did not actually have to finish the project. We only needed to come up with an idea and explain how it might work.",
-      {
-        type: "links",
-        items: [
-          {
-            label: "Number Trace",
-            href: "https://github.com/yihangwan330-maker/pi-finder"
-          },
-          {
-            label: "Source Code",
-            href: "https://github.com/yihangwan330-maker/pi-finder"
-          }
-        ]
-      },
       "At that time, we were learning about irrational numbers.",
       "That was probably the first time I seriously thought about numbers like π. I knew that their decimal expansions did not terminate or repeat, but what fascinated me was not just the definition. It was the feeling that behind the decimal point, there was an endless world made only of digits.",
       "So I came up with an idea: what if there were a website where you could type in a number, and it would tell you where that sequence first appears in π?",
@@ -63,7 +50,16 @@ const posts = [
       "Now, years later, that curiosity is still there. Probability theory gave it a sharper mathematical shape, while building the website taught me the practical limits around it.",
       "Maybe one day I will upgrade the project again, with a backend, a larger dataset, or a faster index. Maybe it will eventually search hundreds of millions of digits.",
       "But for now, that small idea from a middle school project proposal is no longer just a sentence on paper.",
-      "It has become a website that can actually be opened."
+      "It has become a website that can actually be opened.",
+      {
+        type: "links",
+        items: [
+          {
+            label: "Number Trace",
+            href: "https://github.com/yihangwan330-maker/pi-finder"
+          }
+        ]
+      }
     ]
   },
   {
